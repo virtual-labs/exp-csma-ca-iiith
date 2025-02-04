@@ -1,0 +1,274 @@
+/* General Body Styling */
+.body {
+    line-height: 1.39;
+    background-color: rgb(44,154,209);
+}
+
+/* Navbar */
+.navbar {
+    background-color: lightblue !important;
+}
+
+/* Buttons */
+.page1sendframe,
+.page1sendframe1,
+.page1sendframe12 {
+    border-radius: 10px;
+    height: 30px;
+    background-color: rgb(152, 203, 59);
+    border-color: rgb(152, 203, 59);
+}
+
+.page1sendframe {
+    width: 250px;
+}
+
+.page1sendframe1 {
+    width: 150px;
+}
+
+/* .page1sendframe12 {
+    background-color: rgb(196, 36, 36);
+    width: 150px;
+    margin-left: 40px;
+} */
+
+/* Display Box */
+.page1display {
+    background-color: rgb(152, 203, 59);
+    border-color: rgb(152, 203, 59);
+    height: 30px;
+    width: 90px;
+}
+
+/* Node Styling */
+.page1node1{
+    background-color: rgb(234, 234, 146);
+    border-color: rgb(234, 234, 146);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 22px;
+}
+
+
+.page1botnode1 {
+    background-color: rgb(152, 203, 59);
+    border-color: rgb(152, 203, 59);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 22px;
+}
+
+.page1node1hub {
+    background-color: rgb(152, 203, 59);
+    border-color: rgb(152, 203, 59);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+/* Circles */
+.circle,
+.circle1,
+.circle2 {
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: rgb(0, 0, 0);
+}
+
+.circle {
+    height: 150px;
+    width: 150px;
+    margin: 22px;
+}
+
+.circle1 {
+    height: 200px;
+    width: 200px;
+    margin: 22px;
+}
+
+.circle2 {
+    height: 250px;
+    width: 250px;
+}
+
+/* Status Boxes */
+.displaybox,
+.displaybox1 {
+    background-color: rgb(152, 203, 59);
+    border-color: rgb(152, 203, 59);
+    border-radius: 10px;
+}
+
+.displaybox {
+    height: 200px;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.displaybox1 {
+    height: 200px;
+    width: 380px;
+    margin: 10px;
+    text-size-adjust: 40rem;
+}
+
+/* User Buttons */
+.userbuto1,
+.userbuto2,
+.userbuto3 {
+    border-radius: 4px;
+    margin: 2px;
+    padding: 2px;
+}
+
+.userbuto1,
+.userbuto2 {
+    width: 140px;
+    height: 50px;
+    background-color: rgb(152, 203, 59);
+}
+
+.userbuto2 {
+    border-color: rgb(82, 4, 251);
+    border-width: 3px;
+}
+
+.userbuto3 {
+    width: 70px;
+    height: 100%;
+    background-color: rgb(152, 203, 59);
+    border-color: rgb(93, 93, 167);
+    border-width: 5px;
+}
+
+/* Connecting Wire */
+.connectingwire {
+    background-color: green;
+}
+
+/* Containers */
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container1{
+    display: flex;
+    flex-direction: row;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+}
+
+.container1 {
+    align-content: space-evenly;
+}
+
+.previous{
+    position: fixed; /* Sticks the div relative to the viewport */
+      bottom: 0;      /* Aligns the div to the bottom */
+      left: 0; 
+      border-radius: 10px;
+      height: 30px;
+      background-color: rgb(152, 203, 59);
+      border-color: rgb(152, 203, 59); 
+}
+
+.next{
+    position: fixed; /* Sticks the div relative to the viewport */
+      bottom: 0;      /* Aligns the div to the bottom */
+      right: 0; 
+      border-radius: 10px;
+      height: 30px;
+      background-color: rgb(152, 203, 59);
+      border-color: rgb(152, 203, 59); 
+}
+
+
+.node1full{
+    margin: 40px;
+    margin-top: 60px;
+}
+
+.botnodefull{
+    margin: 40px
+}
+
+.hubnode{
+    margin-top: 400px;
+}
+
+
+@media (max-width : 480px) {
+
+
+    /* Circles */
+.circle,
+.circle1,
+.circle2 {
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: rgb(0, 0, 0);
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    margin: 22px;
+}
+
+.circle1 {
+    height: 100px;
+    width: 100px;
+    margin: 22px;
+}
+
+.circle2 {
+    height: 150px;
+    width: 150px;
+}
+
+.page1node1{
+    height: 30px;
+    width: 30px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.page1botnode1{
+    height: 30px;
+    width: 30px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+
+.page1sendframe{
+    width: 100px;
+    height: 70px;
+}
+
+.page1sendframe12{
+    width: 100px;
+    height: 70px;
+}
+
+.node1full{
+    margin-right: 10px;
+}
+
+.circles{
+    margin-right: 10px;
+}
+
+
+
+    
+}

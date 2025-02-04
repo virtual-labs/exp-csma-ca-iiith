@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+        
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+    <!-- title -->
+    <title>CSMA / CA</title>
+
+    <!-- linking the css file -->
+    <link rel="stylesheet" href="./src/css/style3.css" />
+  </head>
+
+  <body class="body">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="./homepage.html">CSMA-CA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="./page1.html">Interfere<span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./page1a.html">Solution to Interference<span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./page2.html">Back-Off</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./page3.html">Hidden Node Problem</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./page4.html">RTS-CTS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="bs-example">
+      <a href="#" class="btn btn-danger" data-bs-toggle="popover" tabindex="0" data-bs-trigger="focus" title="explanation" data-bs-content="
+      
+      This is an example of hidden node problem where the bot node is not detectable by the user node. But when signals are sent from user node, collisions tend to happen
+      
+      
+      ">Click here for explanation</a>
+    </div>
+
+    <center>
+      <h3>Hidden Node Problem</h3>
+    </center>
+
+    <div class="container">
+
+    <div>
+      <div class="nodes">
+
+      <button class="page1node1">Node 1</button>
+
+        <button class="connectingwire" id="cw1"></button>
+        <button class="connectingwire" id="cw2"></button>
+        <button class="connectingwire" id="cw3"></button>
+        <button class="connectingwire" id="cw4"></button>
+        <button class="connectingwire" id="cw5"></button>
+
+      <button class="page1node1">Hub</button>
+
+        <button class="connectingwire" id="dw5"></button>
+        <button class="connectingwire" id="dw4"></button>
+        <button class="connectingwire" id="dw3"></button>
+        <button class="connectingwire" id="dw2"></button>
+        <button class="connectingwire" id="dw1"></button>
+
+      <button class="page1node1">Bot Node</button>
+
+      </div>
+
+      <button class="page1sendframe sendframebutton" onclick="sendframe()">Send Frame</button>
+
+        Node 1 Status : 
+      <button class="page1sendframe statusofnode1" id="page1display">........................</button>     
+
+    </div>
+
+
+    <div class="statusbox">
+      Signal Status : <br>
+      <button class="displaybox" id="displaybox">Status</button>
+    </div>
+    
+    </div>
+
+     &nbsp;&nbsp;&nbsp;&nbsp;
+
+     <a href="./page2.html">
+      <button class="previous">Previous</button>
+      </a> 
+
+
+      <a href="./page4.html">
+      <button class="next">Next</button>
+      </a>
+
+
+
+
+   
+    <script src="./src/js/main2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+.page1node1{
+    background-color: rgb(152, 203, 59);
+    border-color: rgb(152, 203, 59);
+    border-radius: 190px;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 0px;
+}
+
+.page1sendframe{
+    background-color: rgb(152, 203, 59);
+    border-color: rgb(152, 203, 59);
+    border-radius: 10px;
+    width: 250px;
+    margin-top: 40px;
+}
+
+.page1display{
+    background-color: rgb(152, 203, 59);
+    border-color: rgb(152, 203, 59);
+    height: 30px;
+    width: 90px;
+}
+
+
+.connectingwire{
+    min-width: 0px;
+    min-height: 0px;
+    background-color: green;
+}
+
+.body{
+    background-color: rgb(44,154,209);
+}
+
+
+.status{
+    border-radius: 5px;
+    border-color: red;
+    background-color: lightpink;
+    width: 100px;
+    height: 35px;
+    border-color: red;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+.user{
+    border-radius: 4px;
+    background-color: rgb(81, 81, 174);
+    height: 100%;
+    width: 100%;
+    padding: 4px;
+    justify-content: space-between;
+}
+
+.userbuto1{
+    width: 140px;
+    height: 50px;
+    border-color:white;
+    background-color: rgb(152, 203, 59);
+    margin: 2px;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.userbuto2{
+    width: 140px;
+    height: 50px;
+    border-color:rgb(82, 4, 251);
+    border-width: 3px;
+    background-color: rgb(152, 203, 59);
+    margin: 2px;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.userbuto3{
+    width: 70px;
+    height: 386spx;
+    border-color:white;
+    background-color: rgb(152, 203, 59);
+    /* margin: 2px; */
+    /* padding: 2px; */
+    border-color: rgb(93, 93, 167);
+    border-width: 5px;
+    border-radius: 4px;
+}
+
+.displaybox{
+    background-color: rgb(152, 203, 59);
+    border-color: rgb(152, 203, 59);
+    border-radius: 10px;
+    height: 200px;
+    width: 300px;
+}
+
+.btn-danger{
+    margin: 4px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-content:space-around;
+    align-self: center;
+}
+
+.previous{
+    position: fixed; /* Sticks the div relative to the viewport */
+      bottom: 0;      /* Aligns the div to the bottom */
+      left: 0; 
+      border-radius: 10px;
+      height: 30px;
+      background-color: rgb(152, 203, 59);
+      border-color: rgb(152, 203, 59); 
+}
+
+.next{
+    position: fixed; /* Sticks the div relative to the viewport */
+      bottom: 0;      /* Aligns the div to the bottom */
+      right: 0; 
+      border-radius: 10px;
+      height: 30px;
+      background-color: rgb(152, 203, 59);
+      border-color: rgb(152, 203, 59); 
+}
+
+.statusbox{
+    margin: 100px;
+    margin-top: 100px;
+}
+
+.nodes{
+    margin-top: 100px;
+}
+
+@media (max-width : 480px) {
+
+    .page1node1{
+        height: 60px;
+        width: 60px;
+    }
+
+
+    .connectingwire{
+        min-width: 0px;
+        min-height: 0px;
+        width: 8px !important;
+        height: 5px;
+        background-color: black;
+    }
+
+
+        
+}
