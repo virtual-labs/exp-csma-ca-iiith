@@ -6,7 +6,12 @@
 
 /* Navbar */
 .navbar {
-    background-color: lightblue !important;
+    background-color: rgb(152, 203, 59) !important;
+}
+
+.bs-example{
+    background-color: rgb(152, 203, 59);
+    margin: 20px;
 }
 
 /* Buttons */

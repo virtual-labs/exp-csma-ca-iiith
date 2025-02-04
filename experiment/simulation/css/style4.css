@@ -7,6 +7,17 @@
 
 }
 
+
+.navbar {
+    background-color: rgb(152, 203, 59) !important;
+}
+
+.bs-example{
+    background-color: rgb(152, 203, 59);
+    margin: 20px;
+}
+
+
 .btn-danger1{
     width: 200px;
     height: 40px;
@@ -120,6 +131,10 @@
     margin: 30px;
 }
 
+.image1{
+    margin: 60px;
+}
+
 
 @media (max-width : 480px) {
 
@@ -136,6 +151,15 @@
     .buttons1{
         display: flex;
         flex-direction: row;
+    }
+
+    .imagecsmaca{
+        width: 300px;
+    }
+
+    .image1{
+        margin: 0px !important;
+        margin-left: 60px !important;
     }
     
 }
