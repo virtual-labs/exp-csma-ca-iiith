@@ -258,11 +258,15 @@
 .page1sendframe{
     width: 100px;
     height: 70px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .page1sendframe12{
     width: 100px;
     height: 70px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .node1full{
@@ -271,6 +275,10 @@
 
 .circles{
     margin-right: 10px;
+}
+
+.signalstatusdiv{
+    margin-top: 20px;
 }
 
 
