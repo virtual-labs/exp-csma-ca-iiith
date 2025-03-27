@@ -2,38 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "How does the backoff mechanism in CSMA/CA help in avoiding collisions?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "It forces all devices to wait for the same time before transmission",
+        "b": "It introduces a random delay before retransmission",
+        "c": "It immediately retries transmission after a failed attempt",
+        "d": "It prevents hidden node problems"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect! If all devices wait the same time, collisions can still occur.",
+        "b": "Correct! The random backoff reduces the chance of simultaneous retransmissions.",
+        "c": "Incorrect! Immediate retries increase the risk of collisions.",
+        "d": "Incorrect! RTS/CTS helps with the hidden node problem, not the backoff mechanism."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What does the Clear-to-Send (CTS) signal indicate in CSMA/CA?",
+      "answers": {
+        "a": "The channel is free for any device to transmit",
+        "b": "The sender can now transmit data",
+        "c": "A collision has occurred",
+        "d": "The transmission failed"
+      },
+      "explanations": {
+        "a": "Incorrect! CTS is only sent to a specific sender, not to all devices.",
+        "b": "Correct! CTS informs the sender that it has reserved the channel and can transmit.",
+        "c": "Incorrect! CSMA/CA aims to avoid collisions rather than detect them.",
+        "d": "Incorrect! CTS does not indicate transmission failure."
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What happens when a device detects that the channel is busy in CSMA/CA?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "It transmits immediately",
+        "b": "It waits for an ACK signal",
+        "c": "It defers transmission and starts a backoff timer",
+        "d": "It increases its transmission power"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect! Transmitting on a busy channel increases collision probability.",
+        "b": "Incorrect! The device has not yet transmitted, so an ACK is irrelevant.",
+        "c": "Correct! CSMA/CA defers transmission and initiates a backoff timer.",
+        "d": "Incorrect! Increasing power does not resolve contention issues."
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "If two devices transmit at the same time despite CSMA/CA, what happens?",
+      "answers": {
+        "a": "The transmission is successful for both devices",
+        "b": "Both devices receive an ACK",
+        "c": "Packets may collide and require retransmission",
+        "d": "The devices will shut down"
+      },
+      "explanations": {
+        "a": "Incorrect! Simultaneous transmission leads to packet collisions.",
+        "b": "Incorrect! If a collision occurs, neither device receives an ACK.",
+        "c": "Correct! Collided packets are lost and need retransmission.",
+        "d": "Incorrect! Devices do not shut down due to collisions."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "How does CSMA/CA handle the hidden node problem?",
+      "answers": {
+        "a": "By using RTS/CTS before transmitting data",
+        "b": "By allowing simultaneous transmissions",
+        "c": "By increasing transmission power",
+        "d": "By using CSMA/CD instead"
+      },
+      "explanations": {
+        "a": "Correct! RTS/CTS helps coordinate transmissions and avoid hidden node issues.",
+        "b": "Incorrect! Simultaneous transmissions can cause collisions.",
+        "c": "Incorrect! Increasing power does not resolve the hidden node problem.",
+        "d": "Incorrect! CSMA/CD is ineffective in wireless networks."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
     }
   ]
 }
