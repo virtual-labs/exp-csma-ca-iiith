@@ -2,38 +2,106 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which technique does CSMA/CA use to avoid collisions?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Carrier Sense and Random Backoff",
+        "b": "Collision Detection",
+        "c": "Synchronous Time Slots",
+        "d": "Token Passing"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Correct! CSMA/CA avoids collisions by sensing the channel and using a random backoff before transmission.",
+        "b": "Incorrect! CSMA/CA does not detect collisions like CSMA/CD.",
+        "c": "Incorrect! Synchronous time slots are used in TDMA, not CSMA/CA.",
+        "d": "Incorrect! Token passing is used in token ring networks, not CSMA/CA."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Why does CSMA/CA use an acknowledgment (ACK) mechanism?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "To confirm successful data transmission and avoid retransmission",
+        "b": "To detect collisions like CSMA/CD",
+        "c": "To allow multiple users to transmit at the same time",
+        "d": "To increase transmission speed"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Correct! CSMA/CA uses ACK to confirm reception and avoid unnecessary retransmissions.",
+        "b": "Incorrect! Unlike CSMA/CD, CSMA/CA does not detect collisions but prevents them.",
+        "c": "Incorrect! CSMA/CA ensures only one device transmits at a time.",
+        "d": "Incorrect! ACK does not increase speed; it ensures reliability."
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the primary reason CSMA/CA is used in wireless networks instead of CSMA/CD?",
+      "answers": {
+        "a": "Wireless networks cannot detect collisions efficiently",
+        "b": "Wireless networks have higher transmission speeds",
+        "c": "CSMA/CD is more expensive",
+        "d": "Wireless networks do not experience collisions"
+      },
+      "explanations": {
+        "a": "Correct! Wireless networks cannot detect collisions effectively, so CSMA/CA avoids them.",
+        "b": "Incorrect! Transmission speed is not the reason for choosing CSMA/CA.",
+        "c": "Incorrect! Cost is not the primary reason for using CSMA/CA.",
+        "d": "Incorrect! Wireless networks do experience collisions but handle them differently."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the purpose of the RTS/CTS mechanism in CSMA/CA?",
+      "answers": {
+        "a": "To reduce the hidden node problem",
+        "b": "To increase data transmission speed",
+        "c": "To eliminate all collisions",
+        "d": "To detect errors in received packets"
+      },
+      "explanations": {
+        "a": "Correct! RTS/CTS helps in reducing the hidden node problem by reserving the channel.",
+        "b": "Incorrect! RTS/CTS does not necessarily increase speed.",
+        "c": "Incorrect! It reduces collisions but does not eliminate them entirely.",
+        "d": "Incorrect! RTS/CTS is not designed for error detection."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What happens when multiple devices sense an idle channel in CSMA/CA?",
+      "answers": {
+        "a": "All devices transmit immediately",
+        "b": "Devices use a random backoff timer before transmitting",
+        "c": "The first device to transmit gains control of the channel",
+        "d": "All devices enter a collision state"
+      },
+      "explanations": {
+        "a": "Incorrect! Simultaneous transmission could cause a collision.",
+        "b": "Correct! CSMA/CA introduces a random backoff to reduce collision chances.",
+        "c": "Incorrect! There is no guarantee that a single device transmits first.",
+        "d": "Incorrect! CSMA/CA prevents collisions rather than detecting them."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Why is CSMA/CA preferred in Wi-Fi networks?",
+      "answers": {
+        "a": "Because Wi-Fi signals are prone to interference and hidden nodes",
+        "b": "Because CSMA/CD is faster",
+        "c": "Because Wi-Fi devices do not need to sense the channel",
+        "d": "Because CSMA/CA guarantees zero packet loss"
+      },
+      "explanations": {
+        "a": "Correct! Wi-Fi networks have issues like interference and hidden nodes, making CSMA/CA more suitable.",
+        "b": "Incorrect! CSMA/CD is not used in wireless networks due to collision detection limitations.",
+        "c": "Incorrect! CSMA/CA requires devices to sense the channel before transmitting.",
+        "d": "Incorrect! CSMA/CA reduces packet loss but does not guarantee zero packet loss."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
     }
   ]
 }
