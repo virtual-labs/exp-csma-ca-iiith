@@ -1,3 +1,1 @@
-## Experiment name 
-
-CSMA-CA
+## CSMA-CA
