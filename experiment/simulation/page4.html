@@ -35,7 +35,7 @@
     <a class="nav-link" href="./page1a.html">2.Solution to Interference<span class="sr-only"></span></a>
     <a class="nav-link" href="./page2.html">3.Back-Off</a>
     <a class="nav-link" href="./page3.html">4.Hidden Node Problem</a>
-    <a class="nav-link" href="./page4.html"><u>5.RTS-CTS</u></a>
+    <a class="nav-link" href="./page4.html"><b><u>5.RTS-CTS</u></b></a>
   </nav>
 
   <div class="bs-example">      
@@ -104,13 +104,14 @@
 
             <!-- functionality buttons -->
             <div>
-              <button class="userbuto1" onclick="channelstatus()">Channel Status</button>
-              <button class="userbuto1" onclick="waitifs()">IFS Wait</button>
-              <button class="userbuto1" onclick="sendrts()">Send RTS</button>
+              <button class="userbuto1" onclick="channelstatus()">1. Channel Status</button>
+              <button class="userbuto1" onclick="waitifs()">2. IFS Wait</button>
+              <button class="userbuto1" onclick="waitsifs()">3. SIFS Wait</button>
               <br>
-              <button class="userbuto1" onclick="waitsifs()">SIFS Wait</button>
-              <button class="userbuto1" onclick="startbackoff()">Back Off</button>
-              <button class="userbuto1" onclick="sendframe()">Send Frame</button>
+
+              <button class="userbuto1" onclick="sendrts()">4. Send RTS</button>
+              <button class="userbuto1" onclick="sendframe()">5. Send Frame</button>
+              <button class="userbuto1" onclick="startbackoff()">6. Back Off</button>
               <!-- <button class="userbuto1" onclick="acknowledge()">Acknowledgement</button> -->
             </div>
 
@@ -124,8 +125,8 @@
 
 
         <!-- k value check  -->
-        <input type="number" class="userbuto1" placeholder="Enter K-Value" id="message" value="">
-        <button id="myButton" class="userbuto1" type="button">Check K-value</button>
+        <input type="number" class="userbuto1" placeholder="Enter K-Value" id="message" value="" disabled>
+        <button id="myButton" class="userbuto1" type="button" disabled>Check K-value</button>
 
 
 

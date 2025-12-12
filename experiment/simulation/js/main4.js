@@ -173,15 +173,25 @@ function channelcheck() {
 
 function startbot()
 {
-  stopbot=false;
+  stopbotvar=false;
   display(out5,"bot Started !")
+  // enable K-value input and Check button when bot starts
+  const msgInput = document.getElementById("message");
+  const myBtn = document.getElementById("myButton");
+  if (msgInput) msgInput.disabled = false;
+  if (myBtn) myBtn.disabled = false;
   channelcheck();
 }
 
 function stopbot()
 {
   stopbotvar=true;
-  alert("botstop tried")
+  // disable K-value controls when bot stops
+  const msgInput = document.getElementById("message");
+  const myBtn = document.getElementById("myButton");
+  if (msgInput) msgInput.disabled = true;
+  if (myBtn) myBtn.disabled = true;
+  alert("bot stopped");
 }
 
 

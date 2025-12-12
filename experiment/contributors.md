@@ -7,3 +7,4 @@
 | SNo. | Name | Email | Institute | ID |
 | :---: | :---: | :---: | :---: | :---: |
 | 1 | S Vigneshwaran | svigneshwaran1073@gmail.com | IIT(BHU) | 21075073 |
+| 1 | Ameya Anand Katare | ameya.katare@gmail.com | IIT(BHU) | 21074005 |
