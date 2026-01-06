@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+  <!-- title -->
+  <title>CSMA / CA</title>
+
+  <!-- linking the css file -->
+  <link rel="stylesheet" href="./css/style4.css" />
+</head>
+
+<body class="body">
+
+
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="./index.html">CSMA-CA</a>
+    <a class="nav-link" href="./page1.html">1.Interfere<span class="sr-only"></span></a>
+    <a class="nav-link" href="./page1a.html">2.Solution to Interference<span class="sr-only"></span></a>
+    <a class="nav-link" href="./page2.html">3.Back-Off</a>
+    <a class="nav-link" href="./page3.html">4.Hidden Node Problem</a>
+    <a class="nav-link" href="./page4.html"><b><u>5.RTS-CTS</u></b></a>
+  </nav>
+
+  <div class="bs-example">      
+      This is the final module, here we have a complete simulation of CSMA/CA. <br>
+      Start the bot by clicking on start bot button above history. <br>
+      Now try out all the functionalities of the networking technique and guess the k (back off constant) as well.
+  </div>
+
+
+
+
+
+  <center>
+    <h3>RTS-CTS</h3>
+  </center>
+
+  <br />
+  <!-- <div style="display:flex; flex-direction: column;  margin-right: 30px;"> -->
+
+  <br />
+
+
+  <div class="body1">
+
+    <div class="image1">
+      <img class="imagecsmaca" src="../images/image.png" alt="">
+    </div>
+
+    <div style="display: flex; flex-direction: column">
+      <!-- <button type="button" class="btn btn-danger1">Collision ?</button>
+        <button type="button" class="btn btn-danger" id="status"></button> -->
+
+      <div style="flex: 0.8">
+        <br /><br />
+        <div style="
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+            ">
+
+          <div class="buttons1">
+            <!-- titles -->
+            <div class="title1">-Channel Status :</div>
+            <div class="title1">-Timer :</div>
+            <div class="title1">-Collision :</div>
+            <div class="title1">-bot Status :</div>
+
+            <br />
+          </div>
+
+
+          <!-- buttons -->
+          <div class="buttons1">
+            <button id="channel1" class="userbuto2"></button>
+            <button id="ifstime" class="userbuto2"></button>
+            <button id="status" class="userbuto2"></button>
+            <button id="dummy" class="userbuto2"></button>
+            <br />
+          </div>
+
+          <br>
+
+
+
+          <div class="user" style="width: 450px; display: flex; flex-direction: row; margin-bottom: 20px;">
+
+            <!-- functionality buttons -->
+            <div>
+              <button class="userbuto1" onclick="channelstatus()">1. Channel Status</button>
+              <button class="userbuto1" onclick="waitifs()">2. IFS Wait</button>
+              <button class="userbuto1" onclick="waitsifs()">3. SIFS Wait</button>
+              <br>
+
+              <button class="userbuto1" onclick="sendrts()">4. Send RTS</button>
+              <button class="userbuto1" onclick="sendframe()">5. Send Frame</button>
+              <button class="userbuto1" onclick="startbackoff()">6. Back Off</button>
+              <!-- <button class="userbuto1" onclick="acknowledge()">Acknowledgement</button> -->
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div style="margin-bottom: 20px;">
+
+
+        <!-- k value check  -->
+        <input type="number" class="userbuto1" placeholder="Enter K-Value" id="message" value="" disabled>
+        <button id="myButton" class="userbuto1" type="button" disabled>Check K-value</button>
+
+
+
+      </div>
+
+
+    </div>
+
+    <div style="padding-left: 30px;">
+
+      <!-- history log -->
+      <div style="
+            display: flex;
+            flex-direction: column solid #ccc;
+            overflow: auto;
+            margin-left: 100px;
+          ">
+        <a href="page4.html">
+          <button
+            style="border-radius: 5px; height: 30px; background-color: rgb(152, 203, 59); border-color:rgb(82, 4, 251);"
+            type="button" onclick="clear()">
+            Clear History
+            <!-- <br> -->
+          </button>
+        </a>
+        &nbsp;&nbsp;
+        <button
+          style="border-radius: 5px; height: 30px; background-color: rgb(152, 203, 59); border-color:rgb(82, 4, 251);"
+          type="button" onclick="startbot()">
+          Start Bot &nbsp;
+          <!-- <br> -->
+        </button>
+        <br>
+        <center>
+          <h6> <br><br> Time > <span id="time"> </span></h6>
+        </center>
+      </div>
+
+      <div style="
+            flex: 0.5;
+            height: 500px;
+            width: 400px;
+            background-color: rgb(152, 203, 59);
+            border-color:rgb(82, 4, 251);
+            border-width: 3px;
+            border-radius: 10px;
+            padding: 10px;
+            overflow-y: scroll;
+          " id="histo"></div>
+    </div>
+
+
+
+  </div>
+  <!-- </div> -->
+  <!-- linking the javascript file -->
+  <script src="./js/main4.js"></script>
+
+  <a href="./page3.html">
+    <button class="previous">Previous</button>
+  </a>
+
+</body>
+
+</html>
