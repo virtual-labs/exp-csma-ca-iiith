@@ -85,6 +85,23 @@
       },
       "correctAnswer": "a",
       "difficulty": "advanced"
+    },
+    {
+      "question": "Which of the following best explains why CSMA/CD is suitable for wired Ethernet but not for wireless networks (where CSMA/CA is used)?",
+      "answers": {
+        "a": "Wired networks have higher bandwidth, so they don't need to avoid collisions.",
+        "b": "Wireless nodes can always detect collisions, but they choose to ignore them to save battery.",
+        "c": "In wireless, a station cannot 'listen' for a collision while transmitting because its own signal strength is much higher than any incoming signal.",
+        "d": "CSMA/CD requires a specialized clock signal that is only available in copper wiring."
+      },
+      "explanations": {
+        "a": "Incorrect! Bandwidth capacity does not change the fundamental need for collision management.",
+        "b": "Incorrect! Wireless hardware is generally half-duplex and cannot detect collisions while transmitting.",
+        "c": "Correct! This 'near-far' power ratio makes collision detection (CD) technically impractical in wireless, necessitating avoidance (CA).",
+        "d": "Incorrect! Neither protocol relies on a shared physical clock signal for collision management."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
     }
   ]
 }
